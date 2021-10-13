@@ -1,0 +1,47 @@
+<html>
+  <body>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="assests" width="0" height="0">
+      <img src="assests/bigtree.png" id="bigtree" width="0" height="0"></img>
+      <img src="assests/bush.png" id="bush" width="0" height="0"></img>
+      <img src="assests/ground.png" id="ground" width="0" height="0"></img>
+      <img src="assests/pathway1.png" id="pathway1" width="0" height="0"></img>
+      <img src="assests/pathway2.png" id="pathway2" width="0" height="0"></img>
+      <img src="assests/pathway3.png" id="pathway3" width="0" height="0"></img>
+      <img src="assests/pathway4.png" id="pathway4" width="0" height="0"></img>
+      <img src="assests/tile.png" id="tile" width="0" height="0"></img>
+      <img src="assests/rock.png" id="rock" width="0" height="0"></img>
+      <img src="assests/smalltree.png" id="smalltree" width="0" height="0"></img>
+      <img src="assests/supporttower.png" id="supporttower" width="0" height="0"></img>
+      <img src="assests/tower1.png" id="tower1" width="0" height="0"></img>
+      <img src="assests/tower2.png" id="tower2" width="0" height="0"></img>
+      <img src="assests/tower3.png" id="tower3" width="0" height="0"></img>
+      <img src="assests/tower4.png" id="tower4" width="0" height="0"></img>
+      <img src="assests/towerbase.png" id="towerbase" width="0" height="0"></img>
+      <img src="assests/enemy1.png" id="enemy1" width="0" height="0"></img>
+    </div>
+    <style>
+      #canvas {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="store.js"></script>
+    <script src="towers.js"></script>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      setInterval(function(){ //game loops
+        canvas.width=canvas.width;
+        store();
+        towers();
+        mouseX=-100;
+        mouseY=-100;
+      },100)
+    </script>
+  </body>
+</html>
